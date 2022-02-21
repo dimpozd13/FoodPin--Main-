@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7BCE61727C3A6EF0071894C /* RestaurantDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BCE61627C3A6EF0071894C /* RestaurantDetailView.swift */; };
 		F463E30E270182F900F25C63 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463E30D270182F900F25C63 /* Restaurant.swift */; };
 		F463E3122701DD4C00F25C63 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F463E3112701DD4C00F25C63 /* ActivityView.swift */; };
 		F4C0D11826F9C46300AC5088 /* FoodPinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C0D11726F9C46300AC5088 /* FoodPinApp.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7BCE61627C3A6EF0071894C /* RestaurantDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailView.swift; sourceTree = "<group>"; };
 		F463E30D270182F900F25C63 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
 		F463E3112701DD4C00F25C63 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		F4C0D11426F9C46300AC5088 /* FoodPin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +43,7 @@
 			children = (
 				F4C0D11926F9C46300AC5088 /* RestaurantListView.swift */,
 				F463E3112701DD4C00F25C63 /* ActivityView.swift */,
+				A7BCE61627C3A6EF0071894C /* RestaurantDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4C0D11A26F9C46300AC5088 /* RestaurantListView.swift in Sources */,
+				A7BCE61727C3A6EF0071894C /* RestaurantDetailView.swift in Sources */,
 				F463E3122701DD4C00F25C63 /* ActivityView.swift in Sources */,
 				F4C0D11826F9C46300AC5088 /* FoodPinApp.swift in Sources */,
 				F463E30E270182F900F25C63 /* Restaurant.swift in Sources */,

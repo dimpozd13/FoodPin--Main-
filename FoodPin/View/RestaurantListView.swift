@@ -33,17 +33,29 @@ struct RestaurantListView: View {
     ]
     
     var body: some View {
-        List {
-            ForEach(restaurants.indices, id: \.self) { index in
-                BasicTextImageRow(restaurant: $restaurants[index])
+        NavigationView {
+            List {
+                ForEach(restaurants.indices, id: \.self) { index in
+                    ZStack(alignment: .leading) {
+                        NavigationLink(destination: RestaurantDetailView(restaurant: restaurants[index])){
+                        EmptyView()
+                        }
+                        .opacity(0)
+                        BasicTextImageRow(restaurant: $restaurants[index])
+                    }
+                }
+                .onDelete(perform: { indexSet in
+                    restaurants.remove(atOffsets: indexSet)
+                })
+                
+                .listRowSeparator(.hidden)
             }
-            .onDelete(perform: { indexSet in
-                restaurants.remove(atOffsets: indexSet)
-            })
-            
-            .listRowSeparator(.hidden)
+            .listStyle(.plain)
+            .navigationTitle("FoodPin")
+            .navigationBarTitleDisplayMode(.automatic) ///.large or .inline
         }
-        .listStyle(.plain)
+        .accentColor(.white)
+
         
     }
 }
